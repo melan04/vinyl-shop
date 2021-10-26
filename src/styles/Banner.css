@@ -1,6 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 .vs-banner {
-    color: black;
-    text-align: right;
-    padding: 32px;
-    border-bottom: solid 3px black;
+  color: black;
+  text-align: right;
+  padding-right: 32px;
+  border-bottom: solid 2px #f5f3e3;
+  display: flex;
+  justify-content: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #9b4646;
+}
+
+.vs-title {
+  font-size: 50px;
+  font-family: "Permanent Marker";
+  color: #f5f3e3;
+  text-shadow: 2px 4px #6b3b37;
+}
+
+.vs-logo {
+  height: 200px;
+  width: 200px;
+}
+
+.vs-cart {
+  color: white;
+  background-color: #31b572;
+  padding: 32px;
 }

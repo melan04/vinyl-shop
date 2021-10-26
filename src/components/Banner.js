@@ -1,9 +1,14 @@
 import '../styles/Banner.css'
+import logo from '../assets/logo.jpg'
 
 function Banner() {
-    return <div className='vs-banner'>
-    <h1>Vinyl Shop</h1>
-</div>
+    const title = 'Vinyl Shop'
+    return (
+        <div className='vs-banner'>
+            <img src={logo} alt='vinyl shop' className='vs-logo' />
+            <h1 className='vs-title'>{title}</h1>
+        </div>
+    )
 }
 
 export default Banner

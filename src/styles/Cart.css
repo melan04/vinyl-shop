@@ -1,6 +1,6 @@
 .vs-cart {
 	color: white;
-	background-color: #31b572;
+	background-color: #9b4646;
 	padding: 32px;
 	display: flex;
 	flex-direction: column;
@@ -11,6 +11,7 @@
 .vs-cart-add-button {
 	margin-left: 32px;
 	cursor: pointer;
+	
 }
 
 .vs-cart-toggle-button {
@@ -23,11 +24,13 @@
 	padding: 0;
 	color: white;
 	align-self: flex-end;
+
 }
 
 .vs-cart-closed {
 	padding: 32px;
 	width: 300px;
+	
 }
 
 .vs-cart-closed > button {

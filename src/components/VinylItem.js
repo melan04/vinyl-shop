@@ -5,9 +5,10 @@ function handleClick(vinylName) {
 	alert(`Vous voulez acheter 1 ${vinylName}?`)
 }
 
-function VinylItem({ id, cover, name, favoris, isSpecialOffer }) {
+function VinylItem({ cover, name, favoris, price, isSpecialOffer }) {
 	return (
-		<li key={id} className='vs-vinyl-item' onClick={() => handleClick}>
+		<li className='vs-vinyl-item' onClick={() => handleClick}>
+			<span className='vs-vinyl-item-price'>{price}€</span>
 			<img className='vs-vinyl-item-cover' src={cover} alt={`${name} cover`} />
 			{isSpecialOffer && <div className='vs-sales'>Soldes</div>}
 			{name}
@@ -19,3 +20,4 @@ function VinylItem({ id, cover, name, favoris, isSpecialOffer }) {
 }
 
 export default VinylItem
+

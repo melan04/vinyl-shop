@@ -1,4 +1,5 @@
 import { vinylList } from '../datas/vinylList'
+import VinylItem from './VinylItem'
 import '../styles/ShoppingList.css'
 
 function ShoppingList() {
@@ -16,11 +17,14 @@ function ShoppingList() {
 				))}
 			</ul>
 			<ul className='vs-vinyl-list'>
-				{vinylList.map((vinyl) => (
-					<li key={vinyl.id} className='vs-vinyl-item'>
-						{vinyl.name}
-						{vinyl.isSpecialOffer && <div className='vs-sales'>Soldes</div>}
-					</li>
+				{vinylList.map(({ id, cover, name, favoris, isSpecialOffer })=> (
+				<VinylItem
+                id={id}
+                cover={cover}
+                name={name}
+                favoris={favoris}
+                isSpecialOffer = {isSpecialOffer}
+            />
 				))}
 			</ul>
 		</div>

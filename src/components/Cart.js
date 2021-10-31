@@ -1,5 +1,5 @@
 import '../styles/Cart.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function Cart({ cart, updateCart }) {
 	const [isOpen, setIsOpen] = useState(true)
@@ -7,6 +7,9 @@ function Cart({ cart, updateCart }) {
 		(acc, vinylType) => acc + vinylType.amount * vinylType.price,
 		0
 	)
+	useEffect(() => {
+		alert(`J'aurai ${total}€ à payer `)
+	}, [total])
 
 	return isOpen ? (
         <div className='vs-cart'>

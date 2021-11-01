@@ -1,22 +1,45 @@
 .vs-shopping-list {
-	width: 100%;
+  width: 100%;
 }
 
 .vs-vinyl-list {
-	list-style-type: none;
-	padding: 32px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  list-style-type: none;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .vs-sales {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	font-weight: 700;
-	color: white;
-	padding: 15px;
-	background-color: #9b4646;
-	border-radius: 20px 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-weight: 700;
+  color: white;
+  padding: 15px;
+  background-color: #9b4646;
+  border-radius: 20px 0px;
+}
+
+button {
+  display: inline-block;
+  background-color: #9b4646;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 100px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: -10px;
+}
+
+button:hover {
+  background-color:#572929fd;
 }

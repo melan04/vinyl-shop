@@ -8,7 +8,7 @@ function Cart({ cart, updateCart }) {
 		0
 	)
 	useEffect(() => {
-		alert(`J'aurai ${total}€ à payer `)
+		alert(`Le montant total de votre panier est de : ${total} €`)
 	}, [total])
 
 	return isOpen ? (
